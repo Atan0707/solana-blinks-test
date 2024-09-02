@@ -1,5 +1,10 @@
 import DashboardFeature from '@/components/dashboard/dashboard-feature';
 
 export default function Page() {
-  return <DashboardFeature />;
+  return (
+    <div className="page">
+      <p>test</p>
+      <DashboardFeature />
+    </div>
+  );
 }
