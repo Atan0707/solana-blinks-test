@@ -6,7 +6,29 @@ export async function GET(request: Request) {
     icon: "https://i.pinimg.com/474x/e9/5a/d9/e95ad97b2ac84f5657402bb9002bc10a.jpg",
     description: "testing blink",
     title: "Atan punya blink",
-    label: "tekan ni",
+    // label: "tekan ni",
+    links: {
+      actions: [
+        {
+          label: "Vote Yes",
+          href: "http://localhost:3000/api/action"
+        },
+        {
+          label: "Vote Yes",
+          href: "http://localhost:3000/api/action"
+        },
+        {
+          label: "Custom",
+          href: "http://localhost:3000/api/action",
+          parameters: [
+            {
+              name: "custom",
+              label: "Custom",
+            }
+          ]
+        }
+      ]
+    },
     error: {
       message: "tak siap lagi"
     }
